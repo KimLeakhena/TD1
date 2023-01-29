@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(153, 153, 153);
+        }
+        .wrapper
+        {
+            background-color: white;
+            width: 70%;
+            height: 600px;
+            margin: auto;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            display: flex;
+            top: 50%;
+            left: 50%;
+            
+            transform: translate(-50%,-50%);
+
+
+        }
+        .content
+        {
+            
+            margin: auto;
+            text-align: center;
+            position: absolute;
+
+        }
+       
+        .small
+        {
+            
+            display: none;
+        }
+        .big
+        {
+            display: none;
+        }
+        @media only screen and (max-width:350px)
+        {
+           .small
+           {
+            display: block;
+            background-color: rgb(177, 131, 139);
+            
+           }
+           .big
+           {
+            display: none;
+            background-color: greenyellow;
+           }
+            
+    
+        }
+        @media only screen and (min-width:351px)
+        {
+           .small
+           {
+            display: none;
+            background-color: rgb(177, 131, 139);
+            
+           }
+           .big
+           {
+            display: block;
+            background-color: greenyellow;
+           }
+            
+    
+        }
+         
+       
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="content">
+            <span class="small">I'm SMALL &#x1F630</span>
+            <span class="big">I'm BIG &#x1F631</span>
+        </div>
+    </div>
+</body>
+</html>
